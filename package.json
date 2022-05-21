@@ -1,4 +1,6 @@
 {
   "name": "loginSystem",
-  "packageManager": "yarn@3.2.1"
+  "scripts": { 
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+  }
 }
