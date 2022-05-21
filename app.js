@@ -13,11 +13,6 @@ const db = mysql.createConnection({
     password: "xW7cILM9XU",
     database: "sql10494021",
 });
-
-app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname,  "build", "index.html"));
-});
-
 app.get('/api/get', (req, res) => {
   db.query("SELECT * FROM `users` WHERE", (err, rows) => {
     if (!err) {
