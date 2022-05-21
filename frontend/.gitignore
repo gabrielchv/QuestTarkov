@@ -9,7 +9,9 @@
 /coverage
 
 # production
-/build
+/src
+/public
+/styles
 
 # misc
 .DS_Store
